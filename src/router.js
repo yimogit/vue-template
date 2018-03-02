@@ -1,35 +1,51 @@
-import Vue from 'vue';
-import Router from 'vue-router';
+import Vue from 'vue'
+import Router from 'vue-router'
 
-Vue.use(Router);
-
-// const homeIndex = () => import('@/views/home/index');
+Vue.use(Router)
 
 const routes = [
-    { path: '', redirect: { name: 'index' } },
-    { path: '/index', component: () => import('@/views/home/index'), name: 'index' },
-    { path: '/comps/loadmore', component: () => import('@/views/comps/loadmore'), name: 'loadmore' },
-];
+  { path: '', redirect: { name: 'index' } },
+  {
+    path: '/index',
+    component: () => import('@/views/home/index'),
+    name: 'index'
+  },
+  {
+    path: '/comps/loadmore',
+    component: () => import('@/views/comps/loadmore'),
+    name: 'loadmore'
+  },
+  {
+    path: '/comps/vuex',
+    component: () => import('@/views/comps/vuex'),
+    name: 'vuex'
+  },
+  {
+    path: '/comps/croppeer',
+    component: () => import('@/views/comps/croppeer'),
+    name: 'croppeer'
+  }
+]
 const router = new Router({
-    mode: 'history',
-    scrollBehavior(to, from, savedPosition) {
-        if (savedPosition) return savedPosition;
-        const position = {};
-        if (to.hash) {
-            position.selector = to.hash;
-        }
-        position.x = 0;
-        position.y = 0;
-        return position;
-    },
-    routes,
-});
+//   mode: 'history',
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) return savedPosition
+    const position = {}
+    if (to.hash) {
+      position.selector = to.hash
+    }
+    position.x = 0
+    position.y = 0
+    return position
+  },
+  routes
+})
 router.beforeEach((to, from, next) => {
-    next();
-});
+  next()
+})
 
-router.afterEach((route) => {
-    console.log(route);
-});
+router.afterEach(route => {
+  console.log(route)
+})
 
-export default router;
+export default router

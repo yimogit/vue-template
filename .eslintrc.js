@@ -56,6 +56,11 @@ module.exports = {
     'max-len':'off',
     'prefer-const':'off',
     'wrap-iife':'warn',
-    'curly':'off'
+    'curly':'off',
+    'no-mixed-operators':'off',
+    'no-control-regex':'off',
+    'semi':'off',
+    'arrow-parens':'off',
+    'comma-dangle':'off'
   }
 }

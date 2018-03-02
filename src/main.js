@@ -1,21 +1,22 @@
-import Vue from 'vue';
-import App from './App';
-import router from './router';
-import directives from './directives';
-import components from './components';
-import filters from './filters';
+import Vue from 'vue'
+import App from './App'
+import router from './router'
+import directives from './directives'
+import components from './components'
+import filters from './filters'
+import store from './store'
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 // 注册指令，过滤器，组件
-Object.keys(directives).forEach(e => Vue.directive(e, directives[e]));
-Object.keys(filters).forEach(e => Vue.filter(e, filters[e]));
-Object.keys(components).forEach(e => Vue.component(e, components[e]));
+Object.keys(directives).forEach(e => Vue.directive(e, directives[e]))
+Object.keys(filters).forEach(e => Vue.filter(e, filters[e]))
+Object.keys(components).forEach(e => Vue.component(e, components[e]))
 
-/* eslint-disable no-new */
-new Vue({
+window.__currentApp = new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
-  template: '<App/>',
-});
+  template: '<App/>'
+})

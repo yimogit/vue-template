@@ -1,9 +1,14 @@
 <template>
-  <div class="main-block" v-infinite-scroll="loadData" infinite-scroll-disabled="loadMore" infinite-scroll-distance="10">
+  <div class="main-block"
+       v-infinite-scroll="loadData"
+       infinite-scroll-disabled="loadMore"
+       infinite-scroll-distance="10">
     <ul>
-      <li v-for="(item,index) in list" :key="index">下拉列表{{index}}</li>
+      <li v-for="(item,index) in list"
+          :key="index">下拉列表{{index}}</li>
     </ul>
-    <v-loadmore :is-load="loadMore" :is-last="isLastPage"></v-loadmore>
+    <v-loadmore :is-load="loadMore"
+                :is-last="isLastPage"></v-loadmore>
   </div>
 </template>
 <script>
@@ -19,7 +24,6 @@ export default {
   created() { },
   methods: {
     loadData() {
-      console.log('..');
       let _this = this;
       if (_this.isLastPage)
         return;
@@ -36,7 +40,7 @@ export default {
       }, 1000);
     },
   },
-};
+}
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
 .main-block {
