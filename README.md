@@ -1,6 +1,11 @@
 # vue-template
 
-> 一个vue.j基架
+> 一个vue.j基架 
+1. vuex使用 
+2. 图片剪切 
+3. 底部加载更多 
+4. 缓存 
+5. axios  
 
 ## Build Setup
 
