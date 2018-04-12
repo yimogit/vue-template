@@ -24,6 +24,11 @@ const routes = [
     path: '/comps/croppeer',
     component: () => import('@/views/comps/croppeer'),
     name: 'croppeer'
+  },
+  {
+    path: '/comps/previewer',
+    component: () => import('@/views/comps/previewer'),
+    name: 'previewer'
   }
 ]
 const router = new Router({

@@ -23,8 +23,9 @@
       <img :src="uploadModel.preview"
            v-if="!uploadModel.showPopup && uploadModel.preview"
            style="width:300px;height:300px;"
-           id="show-prev" />
+           id="show-prev" testattr="true"/>
     </div>
+    <v-previewer opAttr="testattr" />
   </div>
 </template>
 <script>
