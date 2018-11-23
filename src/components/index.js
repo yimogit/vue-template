@@ -1,11 +1,11 @@
-import LoadMore from './LoadMore'
-import Previewer from './Previewer'
+import VLoadMore from './LoadMore'
+import VPreviewer from './Previewer'
 import VLoading from './Loading'
 import VPopup from './Popup'
 
 export default {
-  'v-loadmore': LoadMore,
-  'v-previewer': Previewer,
+  VLoadMore,
+  VPreviewer,
   VLoading,
   VPopup
 }

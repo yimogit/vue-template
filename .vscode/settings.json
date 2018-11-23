@@ -1,0 +1,45 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": 0,
+  "extensions.ignoreRecommendations": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "files.associations": {
+    "*.vue": "vue",
+    "*.wpy": "vue",
+    "*.wxml": "html",
+    "*.wxss": "css"
+  },
+  "extensions.autoUpdate": false,
+  "editor.tabSize": 2,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  // 使用 js-beautify-html 插件格式化 html
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  // 格式化插件的配置
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      // 属性强制折行对齐
+      "wrap_attributes": "force-aligned"
+    }
+  },
+  "files.insertFinalNewline": true
+}
