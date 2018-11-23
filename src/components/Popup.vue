@@ -36,7 +36,6 @@ export default {
       this.popupStatus = true
     },
     close() {
-      console.log(this.popupStatus)
       this.popupStatus = false
       this.$emit('input', false)
       this.$emit('close')
