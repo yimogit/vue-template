@@ -1,10 +1,6 @@
 <template>
   <div>
     首页{{id}}
-    <router-link to="/comps/loadmore">loadmore</router-link>
-    <router-link to="/comps/vuex">vuex</router-link>
-    <router-link to="/comps/croppeer">croppeer</router-link>
-    <router-link to="/comps/previewer">previewer</router-link>
   </div>
 </template>
 <script>

@@ -5,8 +5,11 @@ import directives from './directives'
 import components from './components'
 import filters from './filters'
 import store from './store'
+import $toast from './components/toast/service'
 
 Vue.config.productionTip = false
+
+Vue.prototype.$toast = $toast
 
 // 注册指令，过滤器，组件
 Object.keys(directives).forEach(e => Vue.directive(e, directives[e]))

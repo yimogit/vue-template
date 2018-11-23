@@ -29,6 +29,21 @@ const routes = [
     path: '/comps/previewer',
     component: () => import('@/views/comps/previewer'),
     name: 'previewer'
+  },
+  {
+    path: '/comps/loading',
+    component: () => import('@/views/comps/loading'),
+    name: 'loading'
+  },
+  {
+    path: '/comps/popup',
+    component: () => import('@/views/comps/popup'),
+    name: 'popup'
+  },
+  {
+    path: '/comps/toast',
+    component: () => import('@/views/comps/toast'),
+    name: 'toast'
   }
 ]
 const router = new Router({

@@ -42,6 +42,4 @@ export default {
 .load-more-block[show-block="true"] {
   opacity: 1;
 }
-.smail-loading {
-}
 </style>
