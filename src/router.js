@@ -44,10 +44,15 @@ const routes = [
     path: '/comps/toast',
     component: () => import('@/views/comps/toast'),
     name: 'toast'
+  },
+  {
+    path: '/comps/wechat',
+    component: () => import('@/views/comps/wechat'),
+    name: 'wechat'
   }
 ]
 const router = new Router({
-//   mode: 'history',
+  //   mode: 'history',
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) return savedPosition
     const position = {}

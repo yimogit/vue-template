@@ -6,10 +6,12 @@ import components from './components'
 import filters from './filters'
 import store from './store'
 import $toast from './components/toast/service'
+import * as $wechat from './utils/wechat'
 
 Vue.config.productionTip = false
 
 Vue.prototype.$toast = $toast
+Vue.prototype.$wechat = $wechat
 
 // 注册指令，过滤器，组件
 Object.keys(directives).forEach(e => Vue.directive(e, directives[e]))

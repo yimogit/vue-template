@@ -8,7 +8,8 @@
     <router-link to="/comps/loading">loading</router-link>
     <router-link to="/comps/popup">popup</router-link>
     <router-link to="/comps/toast">toast</router-link>
-    <router-view/>
+    <router-link to="/comps/wechat">wechat</router-link>
+    <router-view />
   </div>
 </template>
 
@@ -17,5 +18,13 @@ import '@/assets/css/style.scss'
 
 export default {
   name: 'App',
+  created() {
+    this.$wechat.shareConfig({
+      title: '全局注册', // 分享标题
+      desc: '全局注册全局注册全局注册',
+      link: 'https://mp.weixin.qq.com',
+      imgUrl: 'http://wx.qlogo.cn/mmopen/vZAc3alXoQUIrN9MOKd6sPUufIamA83hwDb6MZlgiaic6BYnFicPb2mibxynqvGoeWJTjzRW5HgDIzJiawblqKMNgaqyAZiaaoqStb/64',
+    })
+  }
 };
 </script>
